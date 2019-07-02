@@ -1,6 +1,11 @@
 import { combineReducers} from 'redux';
 
-const dummy = () => {
+const dummy = (action) => {
+    console.log(action);
+    // if (action.type === "FETCH_POSTS") {
+    //     return { posts: ['lol']}
+    // }
+
     return 'dummy data';
 };
 
